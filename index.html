@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Store</title>
+  <link rel="stylesheet" href="C:\Users\JEEYA\style.css">
+</head>
+<style>/* General styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+      }
+      
+      /* Body and Background */
+      body {
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      
+      /* Navigation Bar */
+      header {
+        background-color: #2c3e50;
+        color: #fff;
+        padding: 20px 0;
+      }
+      
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+      nav .logo h1 {
+        font-size: 2rem;
+      }
+      
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+      
+      nav ul li {
+        margin: 0 20px;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+      }
+      
+      nav ul li a:hover {
+        color: #f39c12;
+      }
+      
+      /* Banner Section */
+      .banner {
+        background: url('https://i.pinimg.com/originals/b5/0e/eb/b50eeb6023a90ac108bb23b9975b4fad.jpg') no-repeat center center/cover;
+        color: #fff;
+        text-align: center;
+        padding: 80px 20px;
+      }
+      
+      .banner-content h2 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+      
+      .banner-content p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+      
+      .shop-now {
+        background-color: #f39c12;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .shop-now:hover {
+        background-color: #e67e22;
+      }
+      
+      /* Book Grid */
+      .books {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      
+      .books h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+      
+      .book-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        justify-items: center;
+      }
+      
+      .book {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .book:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      }
+      
+      .book img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      
+      .book h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+      
+      .book .author {
+        font-size: 1.1rem;
+        color: #777;
+        margin-bottom: 15px;
+      }
+      
+      .book .price {
+        font-size: 1.3rem;
+        color: #e74c3c;
+        margin-bottom: 20px;
+      }
+      
+      .btn {
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .btn:hover {
+        background-color: #2980b9;
+      }
+      
+      /* Footer */
+      footer {
+        background-color: #2c3e50;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      </style>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Book Haven</h1>
+      </div>
+      <ul>
+        <li><a href="cart.html">Go to cart</a></li>
+        <li><a href="C:\Users\JEEYA\shop page.html">Books</a></li>
+        <li><a href="C:\Users\JEEYA\Desktop\contact us.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Banner -->
+  <section class="banner">
+    <div class="banner-content">
+      <h2>Explore the World of Books</h2>
+      <p>Find your next great read at Book Haven!</p>
+      <a href="C:\Users\JEEYA\shop page.html" class="shop-now">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Book Grid -->
+  <section class="books" id="books">
+    <h2>Featured Books</h2>
+    <div class="book-container">
+      <div class="book">
+        <img src="C:\Users\JEEYA\Desktop\the great adventure.jpg" alt="book 1">
+        <h3>The Great Adventure</h3>
+        <p class="author">by John Doe</p>
+        <p class="price">599₹</p>
+<a href="cart.html" class="btn add-to-cart" data-title="The Great Adventure" data-author="John Doe" data-price="599">Add to Cart</a>
+      </div>
+      <div class="book">
+        <img src="C:\Users\JEEYA\Desktop\the kargil girl.jpg" alt="Book 2">
+        <h3>The Kargil girl</h3>
+        <p class="author">Kiran Nirvan</p>
+        <p class="price">350₹</p>
+<a href="cart.html" class="btn add-to-cart" data-title="The Kargil girl" data-author="Kiran Nirvan" data-price="350">Add to Cart</a>
+      </div>
+      <div class="book">
+        <img src="C:\Users\JEEYA\Desktop\cooking.jpg" alt="Book 3">
+        <h3>Cooking Made Easy</h3>
+        <p class="author">by Anna Brown</p>
+        <p class="price">300₹</p>
+<a href="cart.html" class="btn add-to-cart" data-title="Cooking Makes Easy" data-author="Anna Brown" data-price="300">Add to Cart</a>
+      </div>
+      <div class="book">
+        <img src="C:\Users\JEEYA\Desktop\mystery of life.jpg" alt="Book 4">
+        <h3>The Mystery of Life</h3>
+        <p class="author">by Mark White</p>
+        <p class="price">500₹</p>
+<a href="cart.html" class="btn add-to-cart" data-title="Mystery of Life" data-author="Mark White" data-price="500">Add to Cart</a>
+      </div>
+      <div class="book">
+        <img src="C:\Users\JEEYA\Desktop\art of orverthinking.jpg"alt="book 5">
+        <h3>The art of overthinking</h3>
+        <p class="author">Shewli Ghosh</p>
+        <p class="price">250₹</p>
+<a href="cart.html" class="btn add-to-cart" data-title="Art of overthinking" data-author="Shewli Ghosh" data-price="250">Add to Cart</a>
+      </div>
+      <div class="book">
+        <img src="C:\Users\JEEYA\Desktop\work simply.jpg"alt="book 6">
+        <h3>Work Simply</h3>
+        <p class="author">Carson Tate</p>
+        <p class="price">650₹</p>
+<a href="cart.html" class="btn add-to-cart" data-title="Work Simply" data-author="Carson Tate" data-price="650">Add to Cart</a>
+    </div>
+    <div class="book">
+      <img src="C:\Users\JEEYA\Desktop\Discipline.jpg"alt="book 7">
+      <h3>Discipline</h3>
+      <p class="author">Brian Tracy</p>
+      <p class="price">950₹</p>
+<a href="cart.html" class="btn add-to-cart" data-title="Discipline" data-author="Brian Tracy" data-price="950">Add to Cart</a>
+    </div>
+    <div class="book">
+      <img src="C:\Users\JEEYA\Desktop\5 second rule.jpg"alt="book 7">
+      <h3>The 5 second rule</h3>
+      <p class="author">Mel Robbins</p>
+      <p class="price">750₹</p>
+<a href="cart.html" class="btn add-to-cart" data-title="The 5 second rule" data-author="Mel Robbins" data-price="750">Add to Cart</a>
+    </div>
+  </section>
+
+<script>
+  // Function to handle Add to Cart
+  document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      // Get book details
+      const title = button.dataset.title;
+      const author = button.dataset.author;
+      const price = button.dataset.price;
+
+      // Retrieve or initialize the cart
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      // Add the book to the cart
+      cart.push({ title, author, price });
+
+      // Save the updated cart to localStorage
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      alert(`${title} has been added to your cart!`);
+    });
+  });
+</script>
+
+  <footer>
+    <p>&copy; 2024 Book Haven | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
